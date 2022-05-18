@@ -1,0 +1,2 @@
+docker build -t todofrontend ./docker/todo-app/front-end
+
