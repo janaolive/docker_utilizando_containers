@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   todotests:
@@ -6,7 +6,7 @@ services:
     build: ./todo-app/tests
     restart: always
     environment:
-      - FRONT_HOST=todofront
+      - FRONT_HOST=todofrontend
     depends_on:
       - "todofront"
       - "todoback"
@@ -18,7 +18,7 @@ services:
     ports: 
       - 3000:3000
     environment:
-      - REACT_APP_API_HOST=todoback
+      - REACT_APP_API_HOST=ttodobackend
     depends_on:
       - "todoback"
 
