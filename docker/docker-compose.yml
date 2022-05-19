@@ -8,8 +8,8 @@ services:
     environment:
       - FRONT_HOST=todofrontend
     depends_on:
-      - "todofront"
-      - "todoback"
+      - "todofrontend"
+      - "todobackend"
 
   todofront:
     container_name: todofrontend
